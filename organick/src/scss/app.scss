@@ -1,8 +1,11 @@
-@import 'variables';
-@import 'libs/normalize';
+// Abstracts:
+@import './abstract/mixins';
+@import './abstract/placeholders';
+@import './abstract/variables';
 
-@import '../scss/components/all';
+// Components:
+@import './components/all';
+@import './components/header';
 
-body {
-	background-color: $background;
-}
+// Libs
+@import './libs/normalize';
