@@ -19,66 +19,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	background-color: $background;
 	color: $dark-grey;
+	@extend %font-text;
+	@include font($size: 1.8rem, $height: 2.9rem, $weight: 400);
 }
 
-a,
-span,
-p,
-b,
-h1,
-h2,
-h3,
-h4,
-h5 {
-	color: $dark-grey;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Roboto';
-	font-weight: 800;
-}
-
-h1 {
-	font-size: 70px;
-	line-height: 80px;
-}
-
-h2 {
-	font-size: 50px;
-	line-height: 58px;
-}
-
-h3 {
-	font-size: 40px;
-	line-height: 45px;
-}
-
-h4 {
-	font-size: 35px;
-	line-height: 40px;
-}
-
-h5 {
-	font-size: 36px;
-	line-height: 35px;
-}
-
-h6 {
-	font-size: 25px;
-	line-height: 29px;
-}
-
-p {
-	font-family: 'Open Sans';
-	font-size: 18px;
-	line-height: 29px;
-	font-weight: 400;
-}
 a {
 	text-decoration: none;
 }
