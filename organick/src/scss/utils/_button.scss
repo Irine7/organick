@@ -1,0 +1,37 @@
+@import '../abstract/variables';
+
+.button-default {
+	position: relative;
+	display: block;
+	padding: 18px 29px;
+	border-radius: 16px;
+	background: $dark-blue;
+	color: $snowy;
+	border: none;
+	cursor: pointer;
+	z-index: 2;
+
+		&:hover {
+		background: darken($color: $golden, $amount: 5%);
+	}
+	&:active {
+		background: lighten($color: $snowy, $amount: 5%);
+		border: 1px solid $dark-blue;
+	}
+}
+
+.button-icon {
+	position: absolute;
+	display: block;
+	max-width: 19px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 30px;
+	z-index: 3;
+}
+
+.button-text {
+	padding-right: 30px;
+	@include font($size: 20px, $weight: 700, $height: 23px);
+	@extend %font-title;
+}
