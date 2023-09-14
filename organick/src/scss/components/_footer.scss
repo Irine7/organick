@@ -1,0 +1,87 @@
+@import '../abstract/variables';
+
+.footer__container {
+	display: flex;
+	justify-content: center;
+	max-width: $header-width;
+	margin: 250px auto;
+
+	.footer__contacts,
+	.footer__socials,
+	.footer__pages {
+		flex: 1;
+		position: relative;
+	}
+
+	.footer__socials::before,
+	.footer__socials::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background-color: $border-grey;
+	}
+
+	.footer__socials::before {
+		right: 0;
+	}
+
+	.footer__socials::after {
+		left: 0;
+	}
+
+	.footer__contacts {
+		margin-right: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		justify-content: space-between;
+		max-width: 285px;
+
+		.footer__contacts-info {
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+
+			.footer__contacts-info__title {
+				color: $dark-blue;
+				@include font($size: 2rem, $height: 2.9rem, $weight: 700);
+				@extend %font-title;
+			}
+
+			.footer__contacts-info__title:first-child {
+				margin-top: 32px;
+			}
+
+			.footer__contacts-info__title:not(:first-child) {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.footer__socials {
+		display: flex;
+		flex: 2;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 540px;
+
+		.footer__socials-text {
+			margin: 23px 40px 40px;
+			text-align: center;
+			@include font($size: 1.8rem, $height: 2.9rem, $weight: 400);
+			@extend %font-text;
+		}
+	}
+
+	.footer__pages {
+		margin-left: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: start;
+		max-width: 285px;
+	}
+}

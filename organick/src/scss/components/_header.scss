@@ -2,11 +2,10 @@
 
 .header {
 	margin: 0 auto;
-	padding: 69px 162px;
-	max-width: 1595px;
-	border: 1px solid $border-grey;
+	margin: 69px 80px;
+	max-width: $header-width;
 
-	.container {
+	.header__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -38,7 +37,7 @@
 		display: flex;
 		align-items: center;
 
-		.input-container {
+		.input__container {
 			position: relative;
 			display: inline-block;
 			margin-right: 15px;

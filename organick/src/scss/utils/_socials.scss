@@ -1,0 +1,24 @@
+@import '../abstract/variables';
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	max-width: 285px;
+	gap: 15px;
+
+	.socials__item {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: $light-green;
+		position: relative;
+	}
+
+	img {
+		position: absolute;
+		top: 30%;
+		left: 35%;
+	}
+}
