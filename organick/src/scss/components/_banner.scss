@@ -1,0 +1,63 @@
+@import '../abstract/variables';
+
+.banner {
+	position: relative;
+
+	.banner__img {
+		width: 100%;
+		height: auto;
+	}
+
+	.banner__background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		z-index: 1;
+	}
+
+	.banner__content {
+		position: absolute;
+		top: 27%;
+		left: 14%;
+		max-width: 30%;
+		z-index: 2;
+	}
+
+	h1 {
+		margin-top: 8px;
+		margin-bottom: 23px;
+	}
+}
+
+.banner__small {
+	margin: 100px 0;
+	display: flex;
+	gap: 35px;
+	justify-content: center;
+
+	.banner__content {
+		max-width: 277px;
+		left: 7%;
+
+		h1 {
+			@include font($size: 4rem, $height: 4.6rem, $weight: 800);
+		}
+		h4 {
+			@include font($size: 3.6rem, $height: 4.9rem, $weight: 400);
+		}
+
+	}
+	.banner__first {
+		h1,
+		h4 {
+			color: $snowy;
+		}
+	}
+	@include media-laptop {
+		width: 80%;
+		height: auto;
+		margin: 50px auto;
+	}
+}

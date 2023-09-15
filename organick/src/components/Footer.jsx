@@ -15,7 +15,7 @@ function Footer() {
 		'Password Protected',
 		'Changelog',
 		'404 Not Found',
-];
+	];
 
 	return (
 		<div>
@@ -26,8 +26,12 @@ function Footer() {
 						<div className="footer__contacts-info">
 							{infoTitles.map((title, index) => (
 								<>
-									<p key={index} className="footer__contacts-info__title">{title}</p>
-									<p className="footer__contacts-info__text">{infoText[index]}</p>
+									<p key={index} className="footer__contacts-info__title">
+										{title}
+									</p>
+									<p className="footer__contacts-info__text">
+										{infoText[index]}
+									</p>
 								</>
 							))}
 						</div>
@@ -44,9 +48,11 @@ function Footer() {
 					</div>
 					<div className="footer__pages">
 						<h5>Utility Pages</h5>
-						{utilityPages.map((page, index) => (
-							<p key={index}>{page}</p>
-						))}
+						<div className="footer__pages-list">
+							{utilityPages.map((page, index) => (
+								<p key={index}>{page}</p>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
