@@ -55,3 +55,10 @@ h6 {
 		@include font($size: 1.7rem, $height: 2.5rem, $weight: 700);
 	}
 }
+
+p {
+	@include font($size: 1.8rem, $height: 2.9rem, $weight: 400);
+	@include media-laptop {
+		@include font($size: 1.2rem, $height: 2.5rem, $weight: 400);
+	}
+}
