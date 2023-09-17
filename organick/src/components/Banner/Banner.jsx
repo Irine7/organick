@@ -1,7 +1,15 @@
 import React from 'react';
 import Button from '../../utils/Button';
 
-function Banner({title, subtitle, imgSrc, backgroundSrc, hasOverlay, extraClassName, button}) {
+function Banner({
+	title,
+	subtitle,
+	imgSrc,
+	backgroundSrc,
+	hasOverlay,
+	extraClassName,
+	button,
+}) {
 	const bannerStyles = {
 		position: 'relative',
 	};
@@ -34,7 +42,7 @@ function Banner({title, subtitle, imgSrc, backgroundSrc, hasOverlay, extraClassN
 			<div className="banner__content">
 				{title && <h4>{title}</h4>}
 				{subtitle && <h1>{subtitle}</h1>}
-				{button && <Button />}
+				{button && <Button title="Explore Now" />}
 			</div>
 		</div>
 	);
