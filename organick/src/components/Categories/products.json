@@ -1,0 +1,66 @@
+[
+	{
+		"id": 1,
+		"title": "Calabrese Broccoli",
+		"oldPrice": "$20.00",
+		"newPrice": "$13.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/broccoli.svg"
+	},
+	{
+		"id": 2,
+		"title": "Banana",
+		"oldPrice": "$20.00",
+		"newPrice": "$14.00",
+		"category": "Fresh",
+		"imgSrc": "assets/img/products/banana.svg"
+	},
+	{
+		"id": 3,
+		"title": "White Nuts",
+		"oldPrice": "$20.00",
+		"newPrice": "$15.00",
+		"category": "Nuts",
+		"imgSrc": "assets/img/products/white-nuts.svg"
+	},
+	{
+		"id": 4,
+		"title": "Red Tomato",
+		"oldPrice": "$20.00",
+		"newPrice": "$17.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/tomato.svg"
+	},
+	{
+		"id": 5,
+		"title": "Mung Bean",
+		"oldPrice": "$20.00",
+		"newPrice": "$11.00",
+		"category": "Health",
+		"imgSrc": "assets/img/products/beans.svg"
+	},
+	{
+		"id": 6,
+		"title": "Brown Hazelnut",
+		"oldPrice": "$20.00",
+		"newPrice": "$12.00",
+		"category": "Nuts",
+		"imgSrc": "assets/img/products/hazelnuts.svg"
+	},
+	{
+		"id": 7,
+		"title": "Eggs",
+		"oldPrice": "$20.00",
+		"newPrice": "$17.00",
+		"category": "Fresh",
+		"imgSrc": "assets/img/products/eggs.svg"
+	},
+	{
+		"id": 8,
+		"title": "Zelco Suji Elaichi Rusk",
+		"oldPrice": "$20.00",
+		"newPrice": "$15.00",
+		"category": "Fresh",
+		"imgSrc": "assets/img/products/bread.svg"
+	}
+]

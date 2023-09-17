@@ -11,13 +11,15 @@
 	cursor: pointer;
 	z-index: 2;
 
-		&:hover {
+	&:hover {
 		background: darken($color: $golden, $amount: 5%);
 	}
 	&:active {
 		background: lighten($color: $snowy, $amount: 5%);
 		border: 1px solid $dark-blue;
 	}
+
+
 }
 
 .button-icon {
@@ -32,6 +34,10 @@
 
 .button-text {
 	padding-right: 30px;
-	@include font($size: 20px, $weight: 700, $height: 23px);
+	@include font($size: 2rem, $height: 2.3rem, $weight: 700);
 	@extend %font-title;
+
+	@include media-laptop {
+		@include font($size: 1.5rem, $height: 2rem, $weight: 700);
+	}
 }
