@@ -1,0 +1,11 @@
+.heading__container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: $content-width;
+	align-items: center;
+}
+
+.align-start {
+	align-items: flex-start;
+}

@@ -50,9 +50,9 @@ h5 {
 }
 
 h6 {
-	@include font($size: 2.5rem, $height: 2.9rem, $weight: 700);
+	@include font($size: 2.5rem, $height: 2.9rem, $weight: 600);
 	@include media-laptop {
-		@include font($size: 1.7rem, $height: 2.5rem, $weight: 700);
+		@include font($size: 1.7rem, $height: 2.5rem, $weight: 600);
 	}
 }
 
@@ -61,4 +61,5 @@ p {
 	@include media-laptop {
 		@include font($size: 1.2rem, $height: 2.5rem, $weight: 400);
 	}
+	@extend %font-text;
 }

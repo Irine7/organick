@@ -1,20 +1,33 @@
 @import '../../abstract/variables';
 
-.categories__products {
+.categories__container {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px auto;
+	max-width: $content-width;
+}
 
-	.product-item {
-		padding: 30px;
-		border: 1px solid $border-grey;
-		border-radius: 30px;
-		background-color: $snowy;
-		max-width: 335px;
+.categories__products {
+	margin: 40px auto 50px;
+
+	.categories__products_items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
 	
-		.product-item__img {
-			width: 100%;
-			max-height: 265px;
+		.product-item {
+			padding: 30px;
+			border: 1px solid $border-grey;
+			border-radius: 30px;
+			background-color: $snowy;
+			max-width: 335px;
+		
+			.product-item__img {
+				width: 100%;
+				max-height: 265px;
+			}
 		}
 	}
 }
