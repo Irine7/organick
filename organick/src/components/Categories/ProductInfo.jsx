@@ -8,7 +8,7 @@ function ProductInfo({ title, oldPrice, newPrice }) {
 				<div className="product-info__price">
 					<p className="product-info__price_crossed-out">{oldPrice} </p>
 					<p className="product-info__price_new"> {newPrice}</p>
-					<img src="assets/img/products/stars.svg" alt="Stars rating" />
+					<img src="assets/img/icons/stars.svg" alt="Stars rating" />
 				</div>
 			</div>
 		</div>

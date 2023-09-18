@@ -2,16 +2,20 @@ import React from 'react';
 
 import Icon from '../utils/Icon';
 import Button from '../utils/Button';
+import Heading from '../utils/Heading';
 
 function AboutUs() {
 	return (
 		<div className="about-us__container">
 			<img src="assets/img/about/about-us.svg" alt="" />
 			<div className="about-us__content">
-				<h4 className="about-us__subtitle">About Us</h4>
-				<h2 className="about-us__title">
-					We Believe in Working Accredited Farmers
-				</h2>
+				<div className="about-us__wrapper">
+					<Heading
+						title={'We Believe in Working Accredited Farmers'}
+						subtitle={'About Us'}
+						extraClassName="align-start"
+					/>
+				</div>
 				<p>
 					Simply dummy text of the printing and typesetting industry. Lorem had
 					ceased to been the industry's standard dummy text ever since the
