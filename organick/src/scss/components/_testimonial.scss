@@ -1,0 +1,73 @@
+@import '../abstract/variables';
+
+.testimonial__container {
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+
+	.testimonial__img {
+		width: 100%;
+		height: auto;
+	}
+
+	.testimonial__content {
+		position: absolute;
+		top: 50%; /* Переместите блок на 50% от верхней грани контейнера */
+		left: 50%; /* Переместите блок на 50% от левой грани контейнера */
+		transform: translate(
+			-50%,
+			-50%
+		); /* Используйте transform, чтобы центрировать блок по центру */
+		max-width: 1000px;
+		height: auto;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.testimonial__consumer {
+			max-width: 780px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 60px;
+
+			&__stars {
+				margin: 20px 0 25px;
+			}
+
+			&__name {
+				margin-top: 20px;
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				height: 1.5px;
+				width: 100%;
+				background-color: $border-grey;
+				margin: 100px 0;
+			}
+		}
+	}
+}
+
+.testimonial__numbers__container {
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	gap: 30px;
+}
+
+.testimonial__numbers {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid $green;
+	background-color: $grey;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

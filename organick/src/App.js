@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Banner from './components/Banner/Banner';
 import AboutUs from './components/AboutUs';
 import Categories from './components/Categories/Categories';
+import Testimonial from './components/Testimonial/Testimonial';
 
 import './scss/app.scss';
 
@@ -37,6 +38,7 @@ function App() {
 				<AboutUs />
 			</div>
 			<Categories />
+			<Testimonial />
 			<Footer />
 		</div>
 	);
