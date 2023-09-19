@@ -6,6 +6,7 @@ import Banner from './components/Banner/Banner';
 import AboutUs from './components/AboutUs';
 import Categories from './components/Categories/Categories';
 import Testimonial from './components/Testimonial/Testimonial';
+import Offer from './components/Offer';
 
 import './scss/app.scss';
 
@@ -39,6 +40,7 @@ function App() {
 			</div>
 			<Categories />
 			<Testimonial />
+			<Offer />
 			<Footer />
 		</div>
 	);

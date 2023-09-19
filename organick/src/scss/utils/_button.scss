@@ -15,14 +15,33 @@
 	transition: background 0.3s ease, transform 0.3s ease;
 
 	&:hover {
-		background: darken($color: $golden, $amount: 5%);
+		background: lighten($color: $snowy, $amount: 5%);
+		color: $dark-blue;
+		border: 1px solid $dark-blue;
 		transform: translateY(-2px);
 	}
 
 	&:active {
-		background: lighten($color: $snowy, $amount: 5%);
-		color: $dark-blue;
+		background: darken($color: $golden, $amount: 5%);
 		border: 1px solid $dark-blue;
+	}
+	
+	&_light {
+		background: $golden;
+		color: $dark-blue;
+		border: none;
+		cursor: pointer;
+		z-index: 2;
+		transition: transform 0.3s, box-shadow 0.3s;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		transition: background 0.3s ease, transform 0.3s ease;
+
+		&:hover {
+			background: lighten($color: $snowy, $amount: 5%);
+			color: $dark-blue;
+			border: 1px solid $dark-blue;
+			transform: translateY(-2px);
+		}
 	}
 }
 

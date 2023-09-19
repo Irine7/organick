@@ -2,19 +2,20 @@ import React from 'react';
 
 import ProductCard from './ProductCard';
 import Button from '../../utils/Button';
+import Heading from '../../utils/Heading';
 
 import products from './products.json';
 
-import Heading from '../../utils/Heading';
+function Categories({ title, subtitle }) {
+	const filteredProducts = products.filter((product) => product.id <= 8);
 
-function Categories( {title, subtitle} ) {
 	return (
 		<div className="categories__container">
-				<Heading title={'Our Products'} subtitle={'Categories'} />
-			
+			<Heading title={'Our Products'} subtitle={'Categories'} />
+
 			<div className="categories__products">
 				<div className="categories__products_items">
-					{products.map((product) => (
+					{filteredProducts.map((product) => (
 						<ProductCard
 							key={product.id}
 							title={product.title}

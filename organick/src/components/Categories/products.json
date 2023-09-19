@@ -62,5 +62,37 @@
 		"newPrice": "$15.00",
 		"category": "Fresh",
 		"imgSrc": "assets/img/products/bread.svg"
+	},
+	{
+		"id": 9,
+		"title": "Broccoli",
+		"oldPrice": "$20.00",
+		"newPrice": "$11.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/brassica.svg"
+	},
+	{
+		"id": 10,
+		"title": "Zucchini",
+		"oldPrice": "$20.00",
+		"newPrice": "$12.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/zucchini.svg"
+	},
+	{
+		"id": 11,
+		"title": "Onion",
+		"oldPrice": "$20.00",
+		"newPrice": "$17.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/onion.svg"
+	},
+	{
+		"id": 12,
+		"title": "Cabbage",
+		"oldPrice": "$20.00",
+		"newPrice": "$17.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/cabbage.svg"
 	}
 ]
