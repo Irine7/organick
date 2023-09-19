@@ -1,0 +1,17 @@
+.offer {
+	background-color: $dark-blue;
+	padding: 100px 0;
+
+	&__container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: $content-width;
+		align-items: end;
+	}
+	.categories__title__sub_white {
+		color: $snowy;
+		margin: 0;
+	}
+}
