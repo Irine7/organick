@@ -1,0 +1,38 @@
+.eco {
+	max-width: $content-medium;
+	display: flex;
+	position: relative;
+
+	&__container {
+		position: absolute;
+		max-width: $content-small;
+		background-color: $snowy;
+		border-radius: 40px;
+		padding: 77px 89px;
+		top: 20%;
+		left: 53%;
+	}
+	
+	@include media-laptop {
+		@include font($size: 4rem, $height: 5rem, $weight: 700);
+
+		&__img {
+			width: 52%;
+		}
+
+		&__container {
+			width: 40%;
+			padding: 50px;
+			top: 20%;
+			left: 47%;
+			
+			&__item {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+.eco__item {
+	margin-top: 20px;
+}
