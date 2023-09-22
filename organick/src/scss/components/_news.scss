@@ -1,0 +1,80 @@
+.news {
+	width: $content-width;
+	margin: 100px auto;
+
+	@include media-laptop {
+		width: $content-laptop-width;
+	}
+
+	&__container {
+		&_header {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			margin-bottom: 45px;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__card_item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		@include media-laptop {
+			width: 49%;
+		}
+		
+		&_img {
+			position: relative;
+		}
+
+		&_date {
+			position: absolute;
+			display: inline-block;
+			background-color: $snowy;
+			border-radius: 50%;
+			top: 5%;
+			left: 4%;
+			z-index: 1;
+			padding: 15px 23px;
+			color: $dark-blue;
+
+			.circle,
+			.month {
+				@include font($size: 2rem, $height: 2.9rem, $weight: 800);
+				@extend %font-title;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
+	&__content_container {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		background-color: $snowy;
+		padding: 45px 55px;
+		border-radius: 30px;
+		width: 90%;
+		transition: transform 0.3s, box-shadow 0.3s;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+	}
+
+	&__content_author span {
+		display: inline-block;
+		padding-left: 10px;
+		margin-bottom: 15px;
+	}
+
+	&__card_text {
+		margin-bottom: 15px;
+	}
+}
