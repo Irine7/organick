@@ -1,5 +1,5 @@
 import Logo from '../utils/Logo';
-import Input from '../utils/InputContainer';
+import InputContainer from '../utils/InputContainer';
 import Cart from '../utils/Cart';
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
 					))}
 				</nav>
 				<div className="header__cart">
-					<Input />
+					<InputContainer />
 					<Cart />
 				</div>
 			</div>

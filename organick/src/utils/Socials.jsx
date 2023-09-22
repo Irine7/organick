@@ -5,8 +5,8 @@ function Socials() {
 	return (
 		<div className="socials">
 			{socials.map((social, index) => (
-				<a href="#" className="socials__item">
-					<img key={index} src={`/assets/img/socials/${social}.svg`} />
+				<a href="#" className="socials__item" key={index}>
+					<img src={`/assets/img/socials/${social}.svg`} />
 				</a>
 			))}
 		</div>

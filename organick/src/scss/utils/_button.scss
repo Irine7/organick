@@ -25,11 +25,11 @@
 		background: darken($color: $golden, $amount: 5%);
 		border: 1px solid $dark-blue;
 	}
-	
+
 	&_light {
-		background: $golden;
+		background: $snowy;
 		color: $dark-blue;
-		border: none;
+		border: 1px solid $dark-blue;
 		cursor: pointer;
 		z-index: 2;
 		transition: transform 0.3s, box-shadow 0.3s;
@@ -37,9 +37,9 @@
 		transition: background 0.3s ease, transform 0.3s ease;
 
 		&:hover {
-			background: lighten($color: $snowy, $amount: 5%);
+			background: lighten($color: $golden, $amount: 5%);
 			color: $dark-blue;
-			border: 1px solid $dark-blue;
+			border: 1px solid $golden;
 			transform: translateY(-2px);
 		}
 	}

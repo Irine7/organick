@@ -1,6 +1,10 @@
 .wrapper {
-	max-width: $page-width;
 	margin: 0 auto;
+	max-width: $page-width;
+	overflow: hidden;
+	@include media-laptop {
+		max-width: $laptop-width;
+	}
 }
 
 h1,
@@ -62,4 +66,12 @@ p {
 		@include font($size: 1.2rem, $height: 2.5rem, $weight: 400);
 	}
 	@extend %font-text;
+}
+
+span {
+	@include font($size: 1.8rem, $height: 2.9rem, $weight: 400);
+	@include media-laptop {
+		@include font($size: 1.2rem, $height: 2.5rem, $weight: 400);
+	}
+	@extend %font-title;
 }

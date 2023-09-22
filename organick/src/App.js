@@ -8,6 +8,9 @@ import Categories from './components/Categories/Categories';
 import Testimonial from './components/Testimonial/Testimonial';
 import Offer from './components/Offer';
 import Eco from './components/Eco';
+import OrganicBlocks from './components/OrganicBlocks';
+import News from './components/News/News';
+import Subscribe from './components/Subscribe';
 
 import './scss/app.scss';
 
@@ -43,6 +46,9 @@ function App() {
 			<Testimonial />
 			<Offer />
 			<Eco />
+			<OrganicBlocks />
+			<News />
+			<Subscribe />
 			<Footer />
 		</div>
 	);

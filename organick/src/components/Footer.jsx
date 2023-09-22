@@ -25,24 +25,24 @@ function Footer() {
 						<h5>Contact Us</h5>
 						<div className="footer__contacts-info">
 							{infoTitles.map((title, index) => (
-								<>
-									<p key={index} className="footer__contacts-info__title">
+								<div className='footer__contacts-info_item' key={index}>
+									<p className="footer__contacts-info__title">
 										{title}
 									</p>
-									<p className="footer__contacts-info__text">
+									<p className="footer__contacts-info__text" >
 										{infoText[index]}
 									</p>
-								</>
+								</div>
 							))}
 						</div>
 					</div>
 					<div className="footer__socials">
 						<Logo />
-						<p className="footer__socials-text">
+						<p className="footer__socials-text" >
 							Simply dummy text of the printing and typesetting industry. Lorem
 							Ipsum simply dummy text of the printing
 						</p>
-						<div className="footer__socials-icons">
+						<div className="footer__socials-icons" >
 							<Socials />
 						</div>
 					</div>

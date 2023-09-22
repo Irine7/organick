@@ -1,11 +1,11 @@
 .heading__container {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
-	max-width: $content-width;
+	max-width: $laptop-width;
 	align-items: center;
 }
 
 .align-start {
 	align-items: flex-start;
+	max-width: $content-heading;
 }

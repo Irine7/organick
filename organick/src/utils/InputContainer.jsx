@@ -2,9 +2,9 @@ import React from 'react';
 
 function InputContainer() {
 	return (
-		<div class="input__container">
+		<div className="input__container">
 			<input type="text" />
-			<img src="assets/img/header/search.svg" alt="" class="icon" />
+			<img src="assets/img/header/search.svg" alt="" className="icon" />
 		</div>
 	);
 }

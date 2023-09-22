@@ -10,7 +10,7 @@ function Button({ title, extraClassName }) {
 				<img
 					src="assets/img/button/arrow.svg"
 					alt="Arrow"
-					class="button-icon"
+					className="button-icon"
 				/>
 			</button>
 		</div>

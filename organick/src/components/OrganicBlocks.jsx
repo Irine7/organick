@@ -11,7 +11,7 @@ function OrganicBlocks() {
 		<div className="organic-blocks">
 			<div className="organic-blocks__container">
 				{blocks.map((block, index) => (
-					<div className="organic-blocks__item">
+					<div className="organic-blocks__item" key={index}>
 						<img src={block.img} alt={block.title} key={index} className="organic-blocks__item_img" />
 						<h6 className="organic-blocks__item_title" >{block.title}</h6>
 					</div>
