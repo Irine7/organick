@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Banner from '../components/Banner/Banner';
-import AboutUs from '../components/AboutUs';
+import AboutUs from '../components/AboutUs/AboutUs';
 import Categories from '../components/Categories/Categories';
 import Testimonial from '../components/Testimonial/Testimonial';
 import Offer from '../components/Offer';
@@ -34,7 +34,11 @@ function Home() {
 					imgSrc="assets/img/banner/offer.jpg"
 				/>
 			</div>
-			<AboutUs />
+			<AboutUs
+				imgSrc="assets/img/about/about-us.svg"
+				title="We Believe in Working Accredited Farmers"
+				text="Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+			/>
 			<Categories />
 			<Testimonial />
 			<Offer />

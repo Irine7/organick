@@ -11,44 +11,81 @@
 
 		@include media-laptop {
 			width: 40%;
-			.about-us__title {
+			&__title {
 				max-width: 80%;
 				@include font($size: 3rem, $height: 4.5rem, $weight: 800);
 			}
 		}
 
-		.about-us__wrapper {
+		&__wrapper {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
 	}
 
-	& img {
-		@include media-laptop {
-			width: 50%;
-		}
-	}
-
-	.about-us__title {
+	&__title {
 		margin-top: 8px;
 		margin-bottom: 14px;
 	}
 
 	.about-us__list {
-		margin: 46px 0;
-
+		.about-us__item:last-of-type {
+			margin-bottom: 30px;
+		}
 		.about-us__item {
 			display: flex;
 			max-width: 80%;
 
-			&:not(:last-child) {
-				margin-bottom: 30px;
-			}
-
-			.about-us__item__content {
+			&__content {
 				margin-left: 18px;
 			}
+		}
+	}
+
+	.about-us__text {
+		padding: 10px 0;
+	}
+}
+
+.background-light {
+	margin: 100px auto;
+	background-color: $snowy;
+	position: relative;
+}
+
+.about-us__row {
+	margin: 20px 0;
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+}
+
+.about-us__block {
+	display: flex;
+	align-items: center;
+	max-width: 48%;
+}
+
+.about-us__img {
+	position: relative;
+
+	@include media-laptop {
+		width: 40%;
+		right: 3%;
+	}
+
+	&_add {
+		position: absolute;
+		top: 74%;
+		left: 16%;
+		transform: translate(-50%, -50%);
+		max-width: 100%;
+
+		@include media-laptop {
+			width: 22%;
+			top: 78%;
+			left: 15%;
 		}
 	}
 }
