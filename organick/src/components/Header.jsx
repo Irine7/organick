@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Logo from '../utils/Logo';
 import InputContainer from '../utils/InputContainer';
 import Cart from '../utils/Cart';
@@ -6,7 +8,7 @@ function Header() {
 	const menu = ['Home', 'About', 'Pages', 'Shop', 'Projects', 'News'];
 
 	return (
-		<div className="header">
+		<section className="header">
 			<div className="header__container">
 				<Logo />
 				<nav className="header__menu">
@@ -19,7 +21,7 @@ function Header() {
 					<Cart />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 
