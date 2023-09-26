@@ -94,5 +94,37 @@
 		"newPrice": "$17.00",
 		"category": "Vegetables",
 		"imgSrc": "assets/img/products/cabbage.svg"
+	},
+	{
+		"id": 13,
+		"title": "Courgette",
+		"oldPrice": "$20.00",
+		"newPrice": "$11.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/courgette.png"
+	},
+	{
+		"id": 14,
+		"title": "Cashew",
+		"oldPrice": "$20.00",
+		"newPrice": "$12.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/cashew.png"
+	},
+	{
+		"id": 15,
+		"title": "Fresh Corn",
+		"oldPrice": "$20.00",
+		"newPrice": "$15.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/corn.png"
+	},
+	{
+		"id": 16,
+		"title": "Organic Almonds",
+		"oldPrice": "$20.00",
+		"newPrice": "$17.00",
+		"category": "Vegetables",
+		"imgSrc": "assets/img/products/almonds.png"
 	}
 ]
