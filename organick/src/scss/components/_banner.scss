@@ -3,12 +3,12 @@
 .banner {
 	position: relative;
 
-	.banner__img {
+	&__img {
 		width: 100%;
 		height: auto;
 	}
 
-	.banner__background {
+	&__background {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -17,7 +17,7 @@
 		z-index: 1;
 	}
 
-	.banner__content {
+	&__content {
 		position: absolute;
 		top: 27%;
 		left: 14%;
@@ -29,15 +29,8 @@
 		margin-top: 8px;
 		margin-bottom: 23px;
 	}
-}
 
-.banner__small {
-	margin: 100px 0;
-	display: flex;
-	gap: 35px;
-	justify-content: center;
-
-	.banner__content {
+	&__content {
 		max-width: 277px;
 		left: 7%;
 
@@ -47,8 +40,15 @@
 		h4 {
 			@include font($size: 3.6rem, $height: 4.9rem, $weight: 400);
 		}
-
 	}
+}
+
+.banner__small {
+	margin: 100px 0;
+	display: flex;
+	gap: 35px;
+	justify-content: center;
+
 	.banner__first {
 		h1,
 		h4 {

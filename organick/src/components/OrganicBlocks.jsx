@@ -8,7 +8,7 @@ function OrganicBlocks() {
 	];
 
 	return (
-		<div className="organic-blocks">
+		<section className="organic-blocks">
 			<div className="organic-blocks__container">
 				{blocks.map((block, index) => (
 					<div className="organic-blocks__item" key={index}>
@@ -17,7 +17,7 @@ function OrganicBlocks() {
 					</div>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 }
 

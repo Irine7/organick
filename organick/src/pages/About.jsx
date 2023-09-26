@@ -2,6 +2,9 @@ import React from 'react';
 
 import HeaderBanners from '../utils/HeaderBanners';
 import AboutUs from '../components/AboutUs/AboutUs';
+import WhyChoose from '../components/WhyChoose/WhyChoose';
+import Team from '../components/Team/Team';
+import AboutUsOffer from '../components/AboutUsOffer';
 
 function About() {
 	return (
@@ -20,6 +23,9 @@ function About() {
 				title="We do Creative Things for Success"
 				extraClassName="background-light"
 			/>
+			<WhyChoose />
+			<Team />
+			<AboutUsOffer />
 		</>
 	);
 }

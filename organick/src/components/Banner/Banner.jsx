@@ -27,7 +27,7 @@ function Banner({
 	};
 
 	return (
-		<div className={bannerClasses} style={bannerStyles}>
+		<section className={bannerClasses} style={bannerStyles}>
 			<div className="banner__container">
 				{hasOverlay && <div style={overlayStyles}></div>}
 				{backgroundSrc && (
@@ -44,7 +44,7 @@ function Banner({
 				{subtitle && <h1>{subtitle}</h1>}
 				{button && <Button title="Explore Now" />}
 			</div>
-		</div>
+		</section>
 	);
 }
 

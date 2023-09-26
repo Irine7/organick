@@ -18,7 +18,7 @@ function Eco() {
 	];
 
 	return (
-		<div className="eco">
+		<section className="eco">
 			<img src="assets/img/eco/eco-friendly.jpg" alt="eco-friendly" className="eco__img" />
 			<div className="eco__container">
 				<Heading
@@ -35,7 +35,7 @@ function Eco() {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

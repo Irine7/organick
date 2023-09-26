@@ -5,7 +5,7 @@ import TestimonialNumbers from './TestimonialNumbers';
 
 function Testimonial() {
 	return (
-		<div className="testimonial__container">
+		<section className="testimonial__container">
 			<img src="assets/img/testimonial/testimonial.jpg" className="testimonial__img" alt="Testimonial background" />
 			<div className="testimonial__content">
 				<Heading title={'What Our Customer Saying?'} subtitle={'Testimonials'} />
@@ -18,7 +18,7 @@ function Testimonial() {
 				</div>
 				<TestimonialNumbers />
 			</div>
-		</div>
+		</section>
 	);
 }
 

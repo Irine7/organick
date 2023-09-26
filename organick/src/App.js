@@ -11,18 +11,18 @@ import './scss/app.scss';
 
 function App() {
 	return (
-		<div className="wrapper">
+		<section className="wrapper">
 			<Header />
-			<div className="content">
+			<section className="content">
 
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/shop" element={<Shop />} />
 				</Routes>
-			</div>
+			</section>
 			<Footer />
-		</div>
+		</section>
 	);
 }
 

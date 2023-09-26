@@ -5,7 +5,7 @@ import NewsContent from './NewsContent'
 
 function News() {
 	return (
-		<div className="news">
+		<section className="news">
 			<div className="news__container">
 				<div className="news__container_header">
 					<Heading title={'Discover weekly content about organic food & more'} subtitle={'News'} extraClassName="align-start" />
@@ -13,7 +13,7 @@ function News() {
 				</div>
 				<NewsContent />
 			</div>
-		</div>
+		</section>
 	)
 }
 

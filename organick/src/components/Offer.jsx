@@ -9,7 +9,7 @@ function Offer() {
 	const filteredProducts = products.filter((product) => product.id >= 9);
 
 	return (
-		<div className="offer">
+		<section className="offer">
 			<div className="offer__container">
 				<Heading
 					title={'We Offer Organic For You'}
@@ -32,7 +32,7 @@ function Offer() {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

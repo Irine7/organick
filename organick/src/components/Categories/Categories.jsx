@@ -10,7 +10,7 @@ function Categories({ title, subtitle }) {
 	const filteredProducts = products.filter((product) => product.id <= 8);
 
 	return (
-		<div className="categories__container">
+		<section className="categories__container">
 			<Heading title={'Our Products'} subtitle={'Categories'} />
 
 			<div className="categories__products">
@@ -28,7 +28,7 @@ function Categories({ title, subtitle }) {
 				</div>
 			</div>
 			<Button title="Load More" />
-		</div>
+		</section>
 	);
 }
 
