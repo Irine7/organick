@@ -32,6 +32,13 @@
 		flex-direction: column;
 		border-radius: 30px;
 		background-color: $light-grey;
+		cursor: pointer;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+		&:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s, box-shadow 0.3s;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+		}
 		@include media-laptop {
 			max-width: 380px;
 		}

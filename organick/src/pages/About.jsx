@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs/AboutUs';
 import WhyChoose from '../components/WhyChoose/WhyChoose';
 import Team from '../components/Team/Team';
 import AboutUsOffer from '../components/AboutUsOffer';
+import Subscribe from '../components/Subscribe';
 
 function About() {
 	return (
@@ -26,6 +27,7 @@ function About() {
 			<WhyChoose />
 			<Team />
 			<AboutUsOffer />
+			<Subscribe />
 		</>
 	);
 }
