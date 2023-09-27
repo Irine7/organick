@@ -1,6 +1,9 @@
 .offer {
-	background-color: $dark-blue;
 	padding: 100px 0;
+	background-color: $dark-blue;
+	@include media-laptop {
+		padding: 50px 0;
+	}
 
 	&__container {
 		margin: 0 auto;
@@ -9,5 +12,8 @@
 		justify-content: space-between;
 		max-width: $content-width;
 		align-items: end;
+		@include media-laptop {
+			max-width: $content-laptop-width;
+		}
 	}
 }

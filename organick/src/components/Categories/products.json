@@ -5,7 +5,7 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$13.00",
 		"category": "Vegetables",
-		"imgSrc": "assets/img/products/broccoli.svg"
+		"imgSrc": "assets/img/products/broccoli.png"
 	},
 	{
 		"id": 2,
@@ -13,23 +13,23 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$14.00",
 		"category": "Fresh",
-		"imgSrc": "assets/img/products/banana.svg"
+		"imgSrc": "assets/img/products/banana.png"
 	},
 	{
 		"id": 3,
-		"title": "White Nuts",
+		"title": "Pistachio",
 		"oldPrice": "$20.00",
 		"newPrice": "$15.00",
 		"category": "Nuts",
-		"imgSrc": "assets/img/products/white-nuts.svg"
+		"imgSrc": "assets/img/products/pistachio.png"
 	},
 	{
 		"id": 4,
-		"title": "Red Tomato",
+		"title": "Cherry Tomato",
 		"oldPrice": "$20.00",
 		"newPrice": "$17.00",
 		"category": "Vegetables",
-		"imgSrc": "assets/img/products/tomato.svg"
+		"imgSrc": "assets/img/products/tomato.png"
 	},
 	{
 		"id": 5,
@@ -37,7 +37,7 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$11.00",
 		"category": "Health",
-		"imgSrc": "assets/img/products/beans.svg"
+		"imgSrc": "assets/img/products/beans.png"
 	},
 	{
 		"id": 6,
@@ -45,7 +45,7 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$12.00",
 		"category": "Nuts",
-		"imgSrc": "assets/img/products/hazelnuts.svg"
+		"imgSrc": "assets/img/products/hazelnuts.png"
 	},
 	{
 		"id": 7,
@@ -53,15 +53,15 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$17.00",
 		"category": "Fresh",
-		"imgSrc": "assets/img/products/eggs.svg"
+		"imgSrc": "assets/img/products/eggs.png"
 	},
 	{
 		"id": 8,
-		"title": "Zelco Suji Elaichi Rusk",
+		"title": "Rustic Bread",
 		"oldPrice": "$20.00",
 		"newPrice": "$15.00",
 		"category": "Fresh",
-		"imgSrc": "assets/img/products/bread.svg"
+		"imgSrc": "assets/img/products/bread.png"
 	},
 	{
 		"id": 9,
@@ -69,7 +69,7 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$11.00",
 		"category": "Vegetables",
-		"imgSrc": "assets/img/products/brassica.svg"
+		"imgSrc": "assets/img/products/brassica.png"
 	},
 	{
 		"id": 10,
@@ -77,7 +77,7 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$12.00",
 		"category": "Vegetables",
-		"imgSrc": "assets/img/products/zucchini.svg"
+		"imgSrc": "assets/img/products/zucchini.png"
 	},
 	{
 		"id": 11,
@@ -85,15 +85,16 @@
 		"oldPrice": "$20.00",
 		"newPrice": "$17.00",
 		"category": "Vegetables",
-		"imgSrc": "assets/img/products/onion.svg"
+		"imgSrc": "assets/img/products/onion.png"
 	},
 	{
+
 		"id": 12,
 		"title": "Cabbage",
 		"oldPrice": "$20.00",
 		"newPrice": "$17.00",
 		"category": "Vegetables",
-		"imgSrc": "assets/img/products/cabbage.svg"
+		"imgSrc": "assets/img/products/cabbage.png"
 	},
 	{
 		"id": 13,
@@ -108,7 +109,7 @@
 		"title": "Cashew",
 		"oldPrice": "$20.00",
 		"newPrice": "$12.00",
-		"category": "Vegetables",
+		"category": "Nuts",
 		"imgSrc": "assets/img/products/cashew.png"
 	},
 	{
@@ -124,7 +125,7 @@
 		"title": "Organic Almonds",
 		"oldPrice": "$20.00",
 		"newPrice": "$17.00",
-		"category": "Vegetables",
+		"category": "Nuts",
 		"imgSrc": "assets/img/products/almonds.png"
 	}
 ]

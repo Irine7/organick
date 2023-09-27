@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeaderBanners from '../utils/HeaderBanners';
 import Subscribe from '../components/Subscribe';
+import ProductItem from '../components/ProductItem/ProductItem';
 
 function ShopSingle() {
 	return (
@@ -11,6 +12,7 @@ function ShopSingle() {
 				backgroundSrc="assets/img/header-banners/shop-single.svg"
 				title="Shop Single"
 			/>
+			<ProductItem />
 			<Subscribe />
 		</>
 	);

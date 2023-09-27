@@ -1,11 +1,12 @@
 .subscribe {
+	margin: 100px 0;
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	// height: 100vh;
 
 	@include media-laptop {
 		width: $content-laptop-width;
-		margin: 0 auto;
+		margin: 50px auto;
 	}
 
 	&__img {

@@ -5,7 +5,7 @@ function SubscribeBlock() {
 	return (
 		<div className="subscribe__container">
 			<input type="text" placeholder="Your Email Address" />
-			<Button title="Subscribe" />
+			<Button title="Subscribe" showIcon={false} />
 		</div>
 	);
 }

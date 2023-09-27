@@ -2,10 +2,13 @@
 
 .header {
 	margin: 0 auto;
-	margin: 69px 80px;
+	margin: 69px auto;
 	max-width: $header-width;
+	@include media-laptop {
+		max-width: $content-laptop-width;
+	}
 
-	.header__container {
+	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -36,6 +39,7 @@
 	&__cart {
 		display: flex;
 		align-items: center;
+		cursor: pointer;
 
 		.input__container {
 			position: relative;
@@ -60,7 +64,7 @@
 			}
 		}
 
-		.header__cart-block {
+		&-block {
 			display: flex;
 			align-items: center;
 			border: 1px solid $border-grey;

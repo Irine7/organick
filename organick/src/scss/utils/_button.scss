@@ -15,7 +15,7 @@
 	transition: background 0.3s ease, transform 0.3s ease;
 
 	&:hover {
-		background: lighten($color: $snowy, $amount: 5%);
+		background: lighten($color: $light-green, $amount: 5%);
 		color: $dark-blue;
 		border: 1px solid $dark-blue;
 		transform: translateY(-2px);
@@ -27,9 +27,8 @@
 	}
 
 	&_light {
-		background: $snowy;
+		background: $light-green;
 		color: $dark-blue;
-		border: 1px solid $dark-blue;
 		cursor: pointer;
 		z-index: 2;
 		transition: transform 0.3s, box-shadow 0.3s;
@@ -38,8 +37,8 @@
 
 		&:hover {
 			background: lighten($color: $golden, $amount: 5%);
+			border: none;
 			color: $dark-blue;
-			border: 1px solid $golden;
 			transform: translateY(-2px);
 		}
 	}
@@ -61,11 +60,15 @@
 }
 
 .button-text {
-	padding-right: 30px;
+	margin-right: 30px;
 	@include font($size: 2rem, $height: 2.3rem, $weight: 700);
 	@extend %font-title;
 
 	@include media-laptop {
 		@include font($size: 1.5rem, $height: 2rem, $weight: 700);
 	}
+}
+
+.button-without-icon {
+	margin-right: 0;
 }

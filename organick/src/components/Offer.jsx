@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../utils/Button';
 import Heading from '../utils/Heading';
-import ProductCard from './Categories/ProductCard';
+import CategoriesItems from './Categories/CategoriesItems';
 
 import products from './Categories/products.json';
 
@@ -18,20 +18,7 @@ function Offer() {
 				/>
 				<Button title="View All Products" extraClassName="button-default_light" />
 			</div>
-			<div className="categories__products">
-				<div className="categories__products_items">
-					{filteredProducts.map((product) => (
-						<ProductCard
-							key={product.id}
-							title={product.title}
-							category={product.category}
-							img={product.imgSrc}
-							oldPrice={product.oldPrice}
-							newPrice={product.newPrice}
-						/>
-					))}
-				</div>
-			</div>
+			<CategoriesItems filteredProducts={filteredProducts} />
 		</section>
 	);
 }

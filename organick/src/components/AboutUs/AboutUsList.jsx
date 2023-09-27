@@ -19,8 +19,8 @@ function AboutUsList({ text }) {
 	return (
 		<>
 			{list.map((item, index) => (
-				<div className="about-us__list">
-					<div className="about-us__item" key={index}>
+				<div className="about-us__list" key={index} >
+					<div className="about-us__item" >
 						<Icon imgSrc={item.imgSrc} />
 						<div className="about-us__item__content">
 							<h6>{item.title}</h6>

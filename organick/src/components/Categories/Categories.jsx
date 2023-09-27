@@ -1,32 +1,18 @@
 import React from 'react';
 
-import ProductCard from './ProductCard';
 import Button from '../../utils/Button';
 import Heading from '../../utils/Heading';
 
 import products from './products.json';
 
+import CategoriesItems from './CategoriesItems';
+
 function Categories({ title, subtitle }) {
 	const filteredProducts = products.filter((product) => product.id <= 8);
-
 	return (
-		<section className="categories__container">
+		<section className="categories">
 			<Heading title={'Our Products'} subtitle={'Categories'} />
-
-			<div className="categories__products">
-				<div className="categories__products_items">
-					{filteredProducts.map((product) => (
-						<ProductCard
-							key={product.id}
-							title={product.title}
-							category={product.category}
-							img={product.imgSrc}
-							oldPrice={product.oldPrice}
-							newPrice={product.newPrice}
-						/>
-					))}
-				</div>
-			</div>
+			<CategoriesItems filteredProducts={filteredProducts}/>
 			<Button title="Load More" />
 		</section>
 	);
