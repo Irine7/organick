@@ -1,0 +1,11 @@
+.related-products {
+	margin: 100px auto;
+	max-width: $content-width;
+	@include media-laptop {
+		max-width: $content-laptop-width;
+	}
+
+	&__title {
+		text-align: center;
+	}
+}

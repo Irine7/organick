@@ -3,6 +3,7 @@ import React from 'react';
 import HeaderBanners from '../utils/HeaderBanners';
 import Subscribe from '../components/Subscribe';
 import ProductItem from '../components/ProductItem/ProductItem';
+import RelatedProducts from '../components/RelatedProducts/RelatedProducts';
 
 function ShopSingle() {
 	return (
@@ -13,6 +14,7 @@ function ShopSingle() {
 				title="Shop Single"
 			/>
 			<ProductItem />
+			<RelatedProducts />
 			<Subscribe />
 		</>
 	);
