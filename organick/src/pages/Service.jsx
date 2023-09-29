@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeaderBanners from '../utils/HeaderBanners';
 import Grow from '../components/Grow/Grow';
+import OrganickOnly from '../components/OrganickOnly';
 
 function ShopSingle() {
 	return (
@@ -12,6 +13,7 @@ function ShopSingle() {
 				title="Services"
 			/>
 			<Grow />
+			<OrganickOnly />
 		</>
 	);
 }

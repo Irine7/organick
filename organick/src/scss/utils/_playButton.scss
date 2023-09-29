@@ -1,0 +1,31 @@
+.play-button {
+	padding: 38px 43px;
+	max-width: 107px;
+	border-radius: 50%;
+	background-color: $green;
+	border: 1px solid $green;
+	cursor: pointer;
+	@include media-laptop {
+		max-width: 90px;
+		height: 90px;
+		padding: 38px 43px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&:hover {
+		background-color: lighten($color: $green, $amount: 5%);
+		border: 1px solid $green;
+	}
+	&:active {
+		background-color: darken($color: $green, $amount: 5%);
+	}
+
+	&__img {
+		padding-left: 2px;
+		@include media-laptop {
+			padding-left: 5px;
+		}
+	}
+}

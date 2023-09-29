@@ -1,0 +1,33 @@
+.organick-only {
+	margin-bottom: 100px;
+	position: relative;
+
+	@include media-laptop {
+		margin-bottom: 50px;
+	}
+
+	&__img {
+		max-width: 100%;
+		@include media-laptop {
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 670px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	&__text {
+		margin: 25px 0 50px;
+		text-align: center;
+	}
+}
