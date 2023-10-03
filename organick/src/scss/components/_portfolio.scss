@@ -1,0 +1,91 @@
+.portfolio {
+	margin: 100px auto 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-between;
+	max-width: $content-width;
+
+	@include media-laptop {
+		max-width: $content-laptop-width;
+		margin: 50px auto 0;
+	}
+
+	&__card {
+		position: relative;
+		margin-bottom: 40px;
+		cursor: pointer;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -63%);
+			width: 90%;
+			height: 70%;
+			background-color: rgba(255, 255, 255, 0.9);
+			z-index: 1;
+			border-radius: 30px;
+			transition: opacity 0.3s;
+			opacity: 0;
+		}
+
+		&:hover::before {
+			opacity: 1;
+		}
+		@include media-laptop {
+			margin-bottom: 30px;
+		}
+
+		&_img {
+			position: relative;
+			z-index: 0;
+			cursor: pointer;
+			border-radius: 30px;
+			@include media-laptop {
+				max-width: 385px;
+			}
+		}
+
+		&_title {
+			margin: 20px 0 3px;
+			@include media-laptop {
+				margin: 10px 0 2px;
+			}
+		}
+		&_subtitle {
+			@include font($size: 2.2rem, $height: 2.9rem, $weight: 400);
+			@include media-laptop {
+				@include font($size: 1.7rem, $height: 2.5rem, $weight: 400);
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 45px;
+			height: 45px;
+			background-color: $green;
+			z-index: 2;
+			border-radius: 50%;
+			opacity: 0;
+			transition: opacity 0.3s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url('../../../public/assets/img/icons/arrow.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 20px 15px;
+			
+		}
+
+		&:hover::after {
+			opacity: 1;
+		}
+	}
+}
