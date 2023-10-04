@@ -1,33 +1,10 @@
 import React from 'react';
 
-function TeamCards() {
-	const cards = [
-		{
-			id: 1,
-			imgSrc: 'assets/img/team/farmer1.jpg',
-			name: 'Giovani Bacardo',
-			position: 'Farmer',
-			socialIcons: ['facebook', 'twitter'],
-		},
-		{
-			id: 2,
-			imgSrc: 'assets/img/team/designer.jpg',
-			name: 'Marianne Loreno',
-			position: 'Designer',
-			socialIcons: ['facebook', 'twitter', 'instagram'],
-		},
-		{
-			id: 3,
-			imgSrc: 'assets/img/team/farmer2.jpg',
-			name: 'Riga Pelore',
-			position: 'Farmer',
-			socialIcons: ['facebook', 'twitter', 'instagram'],
-		},
-	];
+function TeamCards( {filteredCards} ) {
 
 	return (
 		<div className="team__cards">
-			{cards.map((card, index) => (
+			{filteredCards.map((card, index) => (
 				<div className="team__card" key={index}>
 					<img src={card.imgSrc} alt={card.name} className="team__card_img" />
 					<div className="team__card_content">

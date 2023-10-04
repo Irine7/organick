@@ -20,6 +20,7 @@
 	&__cards {
 		max-width: $content-width;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		@include media-laptop {
 			max-width: $content-laptop-width;
@@ -27,6 +28,7 @@
 	}
 
 	&__card {
+		margin-top: 40px;
 		max-width: 450px;
 		display: flex;
 		flex-direction: column;

@@ -11,6 +11,7 @@ import Service from './pages/Service';
 import Quality from './pages/Quality';
 import Portfolio from './pages/Portfolio';
 import Raspberry from './pages/Raspberry';
+import OurTeam from './pages/OurTeam';
 
 import './scss/app.scss';
 
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/quality" element={<Quality />} />
 					<Route path="/portfolio" element={<Portfolio />} />
 					<Route path="/raspberry" element={<Raspberry />} />
+					<Route path="/team" element={<OurTeam />} />
 				</Routes>
 			</section>
 			<Footer />

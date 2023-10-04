@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"imgSrc": "assets/img/team/farmer1.jpg",
+		"name": "Giovani Bacardo",
+		"position": "Farmer",
+		"socialIcons": ["facebook", "twitter"]
+	},
+	{
+		"id": 2,
+		"imgSrc": "assets/img/team/designer.jpg",
+		"name": "Marianne Loreno",
+		"position": "Designer",
+		"socialIcons": ["facebook", "twitter", "instagram"]
+	},
+	{
+		"id": 3,
+		"imgSrc": "assets/img/team/farmer2.jpg",
+		"name": "Riga Pelore",
+		"position": "Farmer",
+		"socialIcons": ["facebook", "twitter", "instagram"]
+	},
+	{
+		"id": 4,
+		"imgSrc": "assets/img/team/farmer3.jpg",
+		"name": "Keira Knightley",
+		"position": "Farmer",
+		"socialIcons": ["facebook", "twitter"]
+	},
+	{
+		"id": 5,
+		"imgSrc": "assets/img/team/designer2.jpg",
+		"name": "Scott Lawrence",
+		"position": "Designer",
+		"socialIcons": ["facebook", "twitter", "instagram"]
+	},
+	{
+		"id": 6,
+		"imgSrc": "assets/img/team/farmer4.jpg",
+		"name": "Karen Allen",
+		"position": "Farmer",
+		"socialIcons": ["facebook", "twitter", "instagram"]
+	}
+]

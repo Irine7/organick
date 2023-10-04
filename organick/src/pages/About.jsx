@@ -3,11 +3,13 @@ import React from 'react';
 import HeaderBanners from '../utils/HeaderBanners';
 import AboutUs from '../components/AboutUs/AboutUs';
 import WhyChoose from '../components/WhyChoose/WhyChoose';
-import Team from '../components/Team/Team';
+import cards from '../components/Team/team-cards.json';
+import Team from '../components/Team/Team.jsx';
 import AboutUsOffer from '../components/AboutUsOffer';
 import Subscribe from '../components/Subscribe';
 
 function About() {
+	const filteredCards = cards.filter((card) => card.id <= 3);
 	return (
 		<>
 			<HeaderBanners
@@ -25,7 +27,7 @@ function About() {
 				extraClassName="background-light"
 			/>
 			<WhyChoose />
-			<Team />
+			<Team filteredCards={filteredCards} />
 			<AboutUsOffer />
 			<Subscribe />
 		</>
