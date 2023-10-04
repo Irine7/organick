@@ -5,6 +5,10 @@
 	align-items: center;
 }
 
+.heading__container h4 {
+  margin-bottom: 7px;
+}
+
 .align-start {
 	align-items: flex-start;
 	max-width: $content-heading;
