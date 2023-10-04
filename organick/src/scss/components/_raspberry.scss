@@ -1,0 +1,98 @@
+.raspberry_background {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.raspberry {
+	width: $content-width;
+	border-radius: 20px;
+	background-color: $snowy;
+	display: flex;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 7px 23px rgba(0, 0, 0, 0.1);
+	@include media-laptop {
+		max-width: 1000px;
+	}
+
+	&__content {
+		padding: 97px 82px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@include media-laptop {
+			padding: 50px;
+		}
+	}
+
+	&__info {
+		width: 62%;
+		border-radius: 20px;
+		background-color: $input;
+		display: flex;
+		align-items: center;
+		@include media-laptop {
+			width: 60%;
+		}
+
+		&_container {
+			margin: 0 auto;
+		}
+
+		&_items {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+		&_items:not(:last-child) {
+			margin-bottom: 18px;
+		}
+
+		&_item {
+			width: 110px;
+			@include font($size: 2.5rem, $height: 2.9rem, $weight: 500);
+			@include media-laptop {
+				width: 80px;
+				@include font($size: 1.8rem, $height: 2rem, $weight: 500);
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		@include media-laptop {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.about-farm {
+	max-width: 937px;
+	margin: 250px auto 100px;
+	@include media-laptop {
+		max-width: $content-small;
+		margin: 170px auto 70px;
+		& img {
+			width: 100%;
+		}
+	}
+
+	&__text {
+		margin: 10px 0;
+	}
+
+	&__img {
+		margin: 25px auto;
+		&_title {
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-top: 20px;
+	}
+}
