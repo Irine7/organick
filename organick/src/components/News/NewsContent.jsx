@@ -1,28 +1,13 @@
 import React from 'react';
 import Button from '../../utils/Button';
+// import articles from './articles.json';
 
-function NewsContent() {
-	const newsContent = [
-		{
-			date: '25 Nov',
-			img: 'assets/img/news/greens.jpg',
-			author: 'Rachi Card',
-			title: 'The Benefits of Vitamin D & How to Get It',
-			text: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum',
-		},
-		{
-			date: '25 Nov',
-			img: 'assets/img/news/tomatoes.jpg',
-			author: 'Rachi Card',
-			title: 'Our Favorite Summertime Tomato',
-			text: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsum',
-		},
-	];
+function NewsContent( {filteredArticles} ) {
 
 	return (
 		<div className="news__content">
 			<div className="news__cards">
-				{newsContent.map((item, index) => (
+				{filteredArticles.map((item, index) => (
 					<div className="news__card_item" key={index}>
 						<div className="news__card_item_date">
 							<p className="circle">{item.date.split(' ')[0]}</p>

@@ -1,0 +1,8 @@
+.our-news {
+	margin: 100px auto;
+	max-width: $content-width;
+	@include media-laptop {
+		margin: 50px auto;
+		max-width: $content-laptop-width;
+	}
+}
