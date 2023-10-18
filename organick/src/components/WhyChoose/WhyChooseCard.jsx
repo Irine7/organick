@@ -32,7 +32,7 @@ function WhyChooseCard() {
 						<img src={card.imgSrc} alt="card" />
 					</div>
 					<h6 className="why-choose__card_item_title">{card.title}</h6>
-					<p className="why-choose__card_item_text">Simply dummy text of the printintypesetting industry.</p>
+					<p className="why-choose__card_item_text">Simply dummy text of the printing type setting industry.</p>
 				</div>
 			))}
 		</div>

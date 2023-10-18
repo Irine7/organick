@@ -13,6 +13,8 @@ import Portfolio from './pages/Portfolio';
 import Raspberry from './pages/Raspberry';
 import OurTeam from './pages/OurTeam';
 import OurNews from './pages/OurNews';
+import Blog from './pages/Blog';
+import ContactUs from './pages/ContactUs';
 
 import './scss/app.scss';
 
@@ -33,6 +35,8 @@ function App() {
 					<Route path="/raspberry" element={<Raspberry />} />
 					<Route path="/team" element={<OurTeam />} />
 					<Route path="/news" element={<OurNews />} />
+					<Route path="/blog" element={<Blog />} />
+					<Route path="/contacts" element={<ContactUs />} />
 				</Routes>
 			</section>
 			<Footer />

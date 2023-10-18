@@ -1,0 +1,110 @@
+.research_background {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.research {
+	width: $content-width;
+	border-radius: 20px;
+	background-color: $snowy;
+	display: flex;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 7px 23px rgba(0, 0, 0, 0.1);
+	@include media-laptop {
+		max-width: 1000px;
+	}
+
+	&__content {
+		padding: 76px 82px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@include media-laptop {
+			padding: 50px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+	}
+
+	&__info span:first-child {
+		margin-right: 10px;
+		color: $dark-blue;
+		@include font($size: 1.8rem, $height: 2.1rem, $weight: 600);
+	}
+
+	&__info span:nth-child(2) {
+		margin-right: 30px;
+	}
+
+	&__info img {
+		margin-right: 8px;
+		width: 16px;
+	}
+
+	&__title {
+		margin: 20px 0;
+		@include media-laptop {
+			@include font($size: 4rem, $height: 4.5rem, $weight: 800);
+		}
+	}
+
+	&__text {
+		max-width: 726px;
+	}
+}
+
+.preferred {
+	max-width: 936px;
+	margin: 250px auto 100px;
+	@include media-laptop {
+		max-width: $content-small;
+		margin: 170px auto 70px;
+	}
+
+	&__title {
+		margin: 23px 0;
+		@include media-laptop {
+			@include font($size: 3.5rem, $height: 4.5rem, $weight: 800);
+		}
+	}
+
+	&__list {
+		margin: 30px 0 50px;
+	}
+	&__list li {
+		margin: 20px;
+		list-style-type: disc;
+	}
+	&__list_second li {
+		margin: 22px;
+		list-style-type: auto;
+	}
+
+	&__quote {
+		padding: 50px 30px;
+		border-radius: 20px;
+		text-align: center;
+		background-color: $quote;
+	}
+
+	&__quote p {
+		@include font($size: 2rem, $height: 3.3rem, $weight: 700);
+		color: $dark-blue;
+	}
+
+	&__subtitle {
+		margin: 50px 0 0;
+		@include font($size: 3.5rem, $height: 4.1rem, $weight: 800);
+	}
+
+	&__text {
+		margin: 24px 0 30px;
+	}
+}
