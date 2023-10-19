@@ -60,11 +60,11 @@ h6 {
 	}
 }
 
-p, li {
+p, li, a {
 	@include font($size: 1.8rem, $height: 2.9rem, $weight: 400);
-	// @include media-laptop {
-	// 	@include font($size: 1.2rem, $height: 2.5rem, $weight: 400);
-	// }
+	@include media-laptop {
+		@include font($size: 1.6rem, $height: 2.5rem, $weight: 400);
+	}
 	@extend %font-text;
 }
 
@@ -74,4 +74,9 @@ span {
 		@include font($size: 1.2rem, $height: 2.5rem, $weight: 400);
 	}
 	@extend %font-title;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-grey;
 }

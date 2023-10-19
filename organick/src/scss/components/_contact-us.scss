@@ -1,0 +1,216 @@
+.our-contacts {
+	margin: 100px auto 0;
+	max-width: $content-width;
+	display: flex;
+	justify-content: space-between;
+	@include media-laptop {
+		margin: 50px auto 0;
+		max-width: $content-laptop-width;
+	}
+
+	&__img {
+		border-radius: 20px;
+		@include media-laptop {
+			max-width: 500px;
+			height: auto;
+		}
+	}
+
+	&__content {
+		max-width: 700px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@include media-laptop {
+			max-width: 620px;
+		}
+	}
+
+	&__content h2 {
+		margin-bottom: 15px;
+		text-align: justify;
+		@include media-laptop {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		max-width: 350px;
+		margin: 35px 0;
+		@include media-laptop {
+			margin: 18px 0;
+		}
+
+		&_container {
+			padding: 12px;
+			display: flex;
+			flex-direction: row;
+			border: 1px solid $grey;
+			border-radius: 20px;
+
+			&:first-of-type {
+				margin-bottom: 17px;
+				@include media-laptop {
+					margin-bottom: 13px;
+				}
+			}
+
+			&_block {
+				padding: 20px 25px;
+				width: 89px;
+				height: 89px;
+				background-color: $medium-grey;
+				border-radius: 18px;
+				@include media-laptop {
+					padding: 15px 19px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 70px;
+					height: 70px;
+
+					& img {
+						width: 100%;
+					}
+				}
+			}
+
+			&_block img {
+				margin: 3px -4px;
+			}
+
+			&_text {
+				margin-left: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.location {
+	margin: 80px auto;
+	max-width: $content-width;
+	display: flex;
+	position: relative;
+	@include media-laptop {
+		margin: 50px auto;
+		max-width: $content-laptop-width;
+	}
+
+	&__img {
+		width: 100%;
+		border-radius: 20px;
+		position: relative;
+		@include media-laptop {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		padding: 46px 53px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(10%, -50%);
+		border-radius: 30px;
+		max-width: 515px;
+		background-color: $snowy;
+		text-align: justify;
+		@include media-laptop {
+			padding: 35px;
+			max-width: 450px;
+		}
+	}
+
+	&__content h2 {
+		margin-bottom: 10px;
+	}
+
+	&__info {
+		margin-top: 19px;
+		max-width: 312px;
+		@include media-laptop {
+			max-width: 285px;
+		}
+		&_item {
+			display: flex;
+			&:last-of-type {
+				margin-top: 22px;
+			}
+			&_text span {
+				@include font($size: 1.8rem, $height: 2.9rem, $weight: 700);
+			}
+		}
+		&_item img {
+			margin-right: 6px;
+			max-width: 50px;
+			max-height: 50px;
+			@include media-laptop {
+				max-width: 40px;
+				max-height: 40px;
+			}
+		}
+	}
+}
+
+.send-message {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: $input-block;
+	@include media-laptop {
+		max-width: $input-block-laptop;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&_item {
+			width: 570px;
+			display: flex;
+			flex-direction: column;
+			@include media-laptop {
+				width: 430px;
+			}
+		}
+		&_item:last-of-type {
+			width: $input-block;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&_item span {
+			margin-bottom: 25px;
+			@include font($size: 1.8rem, $height: 2.1rem, $weight: 600);
+			@include media-laptop {
+				margin-bottom: 10px;
+			}
+		}
+		&_item input,
+		&_item textarea {
+			margin-bottom: 50px;
+			padding: 30px 0 30px 23px;
+			border: 1px solid $green;
+			border-radius: 10px;
+			@include media-laptop {
+				margin-bottom: 30px;
+				padding: 20px 0 20px 18px;
+			}
+		}
+		&_item textarea {
+			min-height: 250px;
+			resize: none;
+		}
+		&_item input::placeholder,
+		&_item textarea::placeholder {
+			color: $input-second;
+			@include font($size: 1.8rem, $height: 2.1rem, $weight: 400);
+		}
+	}
+}
