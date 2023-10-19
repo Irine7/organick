@@ -9,6 +9,7 @@ function Banner({
 	hasOverlay,
 	extraClassName,
 	button,
+	buttonText
 }) {
 	const bannerStyles = {
 		position: 'relative',
@@ -42,7 +43,7 @@ function Banner({
 			<div className="banner__content">
 				{title && <h4>{title}</h4>}
 				{subtitle && <h1>{subtitle}</h1>}
-				{button && <Button title="Explore Now" />}
+				{button && <Button title={buttonText} />}
 			</div>
 		</section>
 	);

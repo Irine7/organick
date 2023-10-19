@@ -15,6 +15,7 @@ import OurTeam from './pages/OurTeam';
 import OurNews from './pages/OurNews';
 import Blog from './pages/Blog';
 import ContactUs from './pages/ContactUs';
+import NotFound from './pages/NotFound';
 
 import './scss/app.scss';
 
@@ -37,6 +38,7 @@ function App() {
 					<Route path="/news" element={<OurNews />} />
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/contacts" element={<ContactUs />} />
+					<Route path="/not-found" element={<NotFound />} />
 				</Routes>
 			</section>
 			<Footer />

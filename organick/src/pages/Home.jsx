@@ -20,6 +20,7 @@ function Home() {
 				backgroundSrc="assets/img/banner/background.svg"
 				hasOverlay={true}
 				button={true}
+				buttonText="Explore Now"
 			/>
 			<div className="banner__small">
 				<Banner
